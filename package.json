@@ -1,0 +1,27 @@
+{
+  "name": "pulumi-aws-infra",
+  "scripts": {
+    "deploy:development": "cross-env PULUMI_PREFER_YARN=1 NODE_ENV=development pulumi up --stack infra.dev",
+    "deploy:production": "cross-env PULUMI_PREFER_YARN=1 NODE_ENV=production pulumi up --stack infra.prod"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^2.0.0",
+    "@pulumi/awsx": "^0.20.0",
+    "@pulumi/policy": "1.2.0",
+    "@pulumi/pulumi": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "14.0.11",
+    "cross-env": "7.0.2",
+    "eslint-plugin-prettier": "3.1.3",
+    "netlify": "4.3.1",
+    "prettier": "2.0.5"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "useTabs": false,
+    "trailingComma": "all",
+    "bracketSpacing": false
+  }
+}
