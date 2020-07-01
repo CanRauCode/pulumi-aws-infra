@@ -1,5 +1,7 @@
 # Pulumi AWS Infrastructure
 
+This is the accompanying repository to the video ["Get started with Pulumi & AWS Serverless for Jamstack Apps / Infrastructure as Code [PART 1]"](https://youtu.be/DHAqeE8zu9c).
+
 ## Required Pulumi Config
 
 ```
